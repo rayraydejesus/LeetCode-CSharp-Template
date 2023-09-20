@@ -1,6 +1,4 @@
-﻿using System;
-
-public abstract class LeetCodeProblem : ILeetCodeProblem
+﻿public abstract class LeetCodeProblem : ILeetCodeProblem
 {
 	public readonly int key;
 	public readonly string title;

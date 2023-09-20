@@ -1,6 +1,4 @@
-﻿using System;
-
-public class LeetCodeProblem_1 : LeetCodeProblem
+﻿public class LeetCodeProblem_1 : LeetCodeProblem
 {
 	public LeetCodeProblem_1(
         int key = 1,

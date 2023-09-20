@@ -1,6 +1,4 @@
-﻿using System;
-
-public interface ILeetCodeProblem
+﻿public interface ILeetCodeProblem
 {
 	public void printProblem();
 	public void retrieveInput();

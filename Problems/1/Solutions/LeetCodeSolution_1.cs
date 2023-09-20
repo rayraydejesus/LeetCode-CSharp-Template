@@ -1,6 +1,4 @@
-﻿using System;
-
-public class LeetCodeSolution_1 : ILeetCodeSolution_1
+﻿public class LeetCodeSolution_1 : ILeetCodeSolution_1
 {
 	public LeetCodeSolution_1(){}
 

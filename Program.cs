@@ -6,7 +6,7 @@ public class Program
         Console.WriteLine("Welcome to the leetcode console app!");
 
         string input = "";
-        int response = -1;
+        int key = -1;
         bool running = true;
         
         while (running)
@@ -14,11 +14,17 @@ public class Program
             Console.WriteLine("Please input the number of the question you'd like to see.");
             input = Console.ReadLine();
 
-            if(int.TryParse(input, out response))
+            if(int.TryParse(input, out key))
             {
                 Console.Clear();
-                LeetCodeProblem_1 problem = new LeetCodeProblem_1();
-                problem.printProblem();
+                ILeetCodeProblem problem = ProblemsIndex.retrieveProblem(key);
+
+                if (problem == null)
+                    Console.WriteLine("Problem " + key + " is currently unavailible.");
+                else
+                {
+                    problem.printProblem();
+                }
             }
             else
             {
