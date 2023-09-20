@@ -2,7 +2,6 @@
 
 public class LeetCodeProblem_1 : LeetCodeProblem
 {
-	
 	public LeetCodeProblem_1(
         int key = 1,
 		string title = "Two Sum",
