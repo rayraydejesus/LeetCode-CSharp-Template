@@ -8,4 +8,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Problems\" />
+    <None Remove="Problems\1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Problems\" />
+    <Folder Include="Problems\1\" />
+  </ItemGroup>
 </Project>
