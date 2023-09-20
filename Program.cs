@@ -7,9 +7,8 @@ public class Program
 
         string input = "";
         int key = -1;
-        bool running = true;
         
-        while (running)
+        while(true)
         {
             Console.WriteLine("Please input the number of the question you'd like to see.");
             input = Console.ReadLine();
@@ -22,9 +21,7 @@ public class Program
                 if (problem == null)
                     Console.WriteLine("Problem " + key + " is currently unavailible.");
                 else
-                {
-                    problem.printProblem();
-                }
+                    problem.runProblem();
             }
             else
             {

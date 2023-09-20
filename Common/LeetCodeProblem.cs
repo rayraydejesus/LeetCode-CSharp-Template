@@ -1,9 +1,9 @@
 ﻿public abstract class LeetCodeProblem : ILeetCodeProblem
 {
-	public readonly int key;
-	public readonly string title;
-	public readonly string url;
-	public readonly string description;
+	protected readonly int key;
+	protected readonly string title;
+	protected readonly string url;
+	protected readonly string description;
 
 	public LeetCodeProblem(int key, string title, string url, string description)
 	{
@@ -13,15 +13,24 @@
 		this.description = description;
 	}
 
+	public virtual void runProblem()
+	{
+		this.printProblem();
+		this.retrieveInput();
+	}
+
 	public virtual void printProblem()
 	{
 		Console.WriteLine(this.key + ". " + this.title);
 		Console.WriteLine(this.description);
 	}
 
-	public abstract void retrieveInput();
-	public abstract bool runSolution(object input);
-	public abstract void printSolution(object solution);
+	protected virtual void retrieveInput()
+	{
+        Console.WriteLine("\nPlease enter the properly formatted input. Use the examples as a guide.");
+    }
+	protected abstract bool runSolution(object input);
+	protected abstract void printSolution(object solution);
 }
 
 

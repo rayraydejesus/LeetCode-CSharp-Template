@@ -1,4 +1,4 @@
-﻿public class LeetCodeSolution_1 : ILeetCodeSolution_1
+﻿public sealed class LeetCodeSolution_1 : ILeetCodeSolution_1
 {
 	public LeetCodeSolution_1(){}
 

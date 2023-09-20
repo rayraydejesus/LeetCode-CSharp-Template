@@ -1,4 +1,4 @@
-﻿public class LeetCodeProblem_1 : LeetCodeProblem
+﻿public sealed class LeetCodeProblem_1 : LeetCodeProblem
 {
 	public LeetCodeProblem_1(
         int key = 1,
@@ -26,16 +26,57 @@
 		"\nOnly one valid answer exists."
 	) : base(key, title, url, description) {}
 
-	public override void retrieveInput()
+	protected override void retrieveInput()
 	{
+		while(true)
+		{
+            base.retrieveInput();
+            string input = Console.ReadLine();
 
-		
-	}
-	public override bool runSolution(object input)
+			if (input == "")
+				Console.WriteLine("No input recieved.");
+			else
+			{
+				int leftBracket = -1;
+				int rightBracket = -1;
+				int targetEquals = -1;
+
+				// NOTE: Finds the brackets for array substring
+				for(int i =  0; i < input.Length; ++i)
+				{
+					if(input[i] == '[')
+						leftBracket = i + 1;
+					if (input[i] == ']')
+					{
+						rightBracket = i - leftBracket;
+						break;
+					}
+				}
+
+				// NOTE: Creates nums string for conversion
+				string numsString = input.Substring(leftBracket, rightBracket);
+				int[] nums = Array.ConvertAll(numsString.Split(','), int.Parse);
+                //Console.WriteLine(numsString);
+                //Console.WriteLine("[{0}]", string.Join(", ", nums));
+
+
+                // NOTE: Creates target string for conversion
+                string targetString = input.Substring(leftBracket + rightBracket);
+				targetEquals = targetString.IndexOf('=');
+				targetString = targetString.Substring(targetEquals + 1).Trim();
+                int target = int.Parse(targetString);
+				//Console.WriteLine(targetString);
+				//Console.WriteLine(target);
+
+
+            }
+        }
+    }
+	protected override bool runSolution(object input)
 	{
 		return false;
 	}
-	public override void printSolution(object solution)
+	protected override void printSolution(object solution)
 	{
 
 	}
