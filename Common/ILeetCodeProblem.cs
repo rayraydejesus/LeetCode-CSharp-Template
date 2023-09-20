@@ -2,8 +2,10 @@
 
 public interface ILeetCodeProblem
 {
-	public object parseInput(string input);
+	public void printProblem();
+	public void retrieveInput();
 	public bool runSolution(object input);
+	public void printSolution(object solution);
 }
 
 

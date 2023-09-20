@@ -16,7 +16,9 @@ public class Program
 
             if(int.TryParse(input, out response))
             {
-                Console.WriteLine("Leetcode rulez!");
+                Console.Clear();
+                LeetCodeProblem_1 problem = new LeetCodeProblem_1();
+                problem.printProblem();
             }
             else
             {

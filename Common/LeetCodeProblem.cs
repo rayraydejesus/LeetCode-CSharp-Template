@@ -15,8 +15,15 @@ public abstract class LeetCodeProblem : ILeetCodeProblem
 		this.description = description;
 	}
 
-	public abstract object parseInput(string input);
+	public virtual void printProblem()
+	{
+		Console.WriteLine(this.key + ". " + this.title);
+		Console.WriteLine(this.description);
+	}
+
+	public abstract void retrieveInput();
 	public abstract bool runSolution(object input);
+	public abstract void printSolution(object solution);
 }
 
 

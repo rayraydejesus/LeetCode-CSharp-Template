@@ -28,13 +28,18 @@ public class LeetCodeProblem_1 : LeetCodeProblem
 		"\nOnly one valid answer exists."
 	) : base(key, title, url, description) {}
 
-	public override object parseInput(string input)
+	public override void retrieveInput()
 	{
-		return null;
+
+		
 	}
 	public override bool runSolution(object input)
 	{
 		return false;
+	}
+	public override void printSolution(object solution)
+	{
+
 	}
 }
 
