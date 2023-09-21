@@ -29,7 +29,9 @@
 	{
         Console.WriteLine("\nPlease enter the properly formatted input. Use the examples as a guide.");
     }
-	protected abstract void runSolution(object input);
+
+    // NOTE: Boxing and unboxing for simplicity sake
+    protected abstract void runSolution(object input);
 	protected abstract void printSolution(object solution);
 }
 
