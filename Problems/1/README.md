@@ -4,7 +4,7 @@
 </br>[Leet Code Problem 1](https://leetcode.com/problems/two-sum/)
 
 **Solution**:
-</br>[Source code](https://github.com/rayraydejesus/LeetCode-CSharp-Template/blob/main/Problems/1/Solutions/Solution_1.cs)
+</br>[Source code](./Solutions/Solution_1_Hashmap.cs)
 
 **Analysis**:
 ```
