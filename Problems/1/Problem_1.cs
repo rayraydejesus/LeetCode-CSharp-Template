@@ -53,6 +53,15 @@
 					}
 				}
 
+				// NOTE: Light error checking
+				if(leftBracket == -1 || rightBracket == -1)
+				{
+					if (!Prompts.invalidInput())
+						break;
+					else
+						continue;
+				}
+
 				// NOTE: Creates nums string for conversion
 				string numsString = input.Substring(leftBracket, rightBracket);
 				int[] nums = Array.ConvertAll(numsString.Split(','), int.Parse);
@@ -63,7 +72,16 @@
                 // NOTE: Creates target string for conversion
                 string targetString = input.Substring(leftBracket + rightBracket);
 				targetEquals = targetString.IndexOf('=');
-				targetString = targetString.Substring(targetEquals + 1).Trim();
+
+                // NOTE: Light error checking
+                if (targetEquals == -1)
+                {
+                    if (!Prompts.invalidInput())
+                        break;
+                    else
+                        continue;
+                }
+                targetString = targetString.Substring(targetEquals + 1).Trim();
                 int target = int.Parse(targetString);
 				//Console.WriteLine(targetString);
 				//Console.WriteLine(target);

@@ -19,6 +19,12 @@ public static class Prompts
     {
         return oneMoreTime("Would you like to try another solution?");
     }
+
+    public static bool invalidInput()
+    {
+        Console.WriteLine("Invalid input.");
+        return anotherSolution();
+    }
 }
 
 
