@@ -18,7 +18,16 @@ Go as hard as you want with error checking. For sanity I try to assume input wil
 
 **Usage**
 -----------
-- Use this repo as a way to practice leetcode while keeping
+Use this repo as a template to create your own fresh repository.
+
+</br>**<em>[Common Folder](https://github.com/rayraydejesus/LeetCode-CSharp-Template/blob/main/Common/)</em>**
+- Contains an interface and abstract class to dervive you leetcode problems from.
+- Includes a prompts file to handle basic error and input prompting.
+  
+</br>**<em>[Problems Folder](https://github.com/rayraydejesus/LeetCode-CSharp-Template/blob/main/Problems/)</em>** 
+- Where you can store the folders for each question(feature).
+- In addition there is a [Problems Index File](https://github.com/rayraydejesus/LeetCode-CSharp-Template/blob/main/Problems/ProblemsIndex.cs) where you should register you problem to the existing switch case.
+- The switch case is used to create a constant hash map based on how c# compiles code. This also prevents creating every problem set object in memory at application startup... Think of it as lazy loading our problems.
 
 <strong>CHEERS! 🍻</strong>
 -------
