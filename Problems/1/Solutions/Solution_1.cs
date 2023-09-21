@@ -1,6 +1,6 @@
-﻿public sealed class LeetCodeSolution_1 : ILeetCodeSolution_1
+﻿public sealed class Solution_1 : ISolution_1
 {
-	public LeetCodeSolution_1(){}
+	public Solution_1(){}
 
 	public int[] TwoSum(int[] nums, int target)
 	{

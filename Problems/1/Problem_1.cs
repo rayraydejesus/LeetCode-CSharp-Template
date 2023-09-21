@@ -68,18 +68,25 @@
 				//Console.WriteLine(targetString);
 				//Console.WriteLine(target);
 
-
+				Input_1 parsedInput = new Input_1(nums, target);
+				this.runSolution(parsedInput);
             }
         }
     }
-	protected override bool runSolution(object input)
+	protected override void runSolution(object input)
 	{
-		return false;
+		Input_1 parsedInput = input as Input_1;
+		Solution_1 solution = new Solution_1();
+		int[] result = solution.TwoSum(parsedInput.nums, parsedInput.target);
+
+		this.printSolution(result);
 	}
 	protected override void printSolution(object solution)
 	{
-
-	}
+		Console.WriteLine("\nSolution:");
+		int[] result = solution as int[];
+        Console.WriteLine("[{0}]", string.Join(", ", result));
+    }
 }
 
 
