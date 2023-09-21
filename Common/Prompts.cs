@@ -2,7 +2,7 @@
 
 public static class Prompts
 {
-	public static bool oneMoreTime(string text = "Would you like to another problem?")
+	public static bool oneMoreTime(string text = "\nWould you like to see another problem?")
 	{
         Console.WriteLine(text +" (Y/N)");
         string input = Console.ReadLine().ToLower();
@@ -17,12 +17,12 @@ public static class Prompts
 
     public static bool anotherSolution()
     {
-        return oneMoreTime("Would you like to try another solution?");
+        return oneMoreTime("\n\nWould you like to try another solution?");
     }
 
     public static bool invalidInput()
     {
-        Console.WriteLine("Invalid input.");
+        Console.WriteLine("\nInvalid input.");
         return anotherSolution();
     }
 }

@@ -10,7 +10,7 @@ public class Program
         
         while(true)
         {
-            Console.WriteLine("Please input the number of the question you'd like to see.");
+            Console.WriteLine("\nPlease input the number of the question you'd like to see.");
             input = Console.ReadLine();
 
             if(int.TryParse(input, out key))
@@ -19,13 +19,13 @@ public class Program
                 ILeetCodeProblem problem = ProblemsIndex.retrieveProblem(key);
 
                 if (problem == null)
-                    Console.WriteLine("Problem " + key + " is currently unavailible.");
+                    Console.WriteLine("\nProblem " + key + " is currently unavailible.");
                 else
                     problem.runProblem();
             }
             else
             {
-                Console.WriteLine("Invalid response.");
+                Console.WriteLine("\nInvalid response.");
             }
 
 
@@ -33,6 +33,6 @@ public class Program
                 break;
         }
 
-        Console.WriteLine("Goodbye!");
+        Console.WriteLine("\nGoodbye!");
     }
 }
