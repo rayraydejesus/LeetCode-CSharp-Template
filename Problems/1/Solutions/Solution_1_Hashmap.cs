@@ -1,6 +1,6 @@
-﻿public sealed class Solution_1 : ISolution_1
+﻿public sealed class Solution_1_Hashmap: ISolution_1
 {
-	public Solution_1(){}
+	public Solution_1_Hashmap(){}
 
 	public int[] TwoSum(int[] nums, int target)
 	{
