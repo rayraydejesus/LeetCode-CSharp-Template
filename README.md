@@ -4,7 +4,7 @@ Use this template to showcase your leetcode progress, OOP skills and input parsi
 
 **Description**
 ------------------
-😡 I created this template because I was tired of seeing my github activity decay while practicing data structures and alogrithms.
+😡 I created this template because I was tired of seeing my github activity decay while practicing data structures and algorithms.
 
 I've included <em>[Problem 1 Two Sum](https://leetcode.com/problems/two-sum/)</em> with the template to showcase the entire process of implementing a question within the console app.
 
@@ -28,6 +28,12 @@ Use this repo as a template to create your own fresh repository.
 - Where you can store the folders for each question(feature).
 - In addition there is a [Problems Index File](https://github.com/rayraydejesus/LeetCode-CSharp-Template/blob/main/Problems/ProblemsIndex.cs) where you should register you problem to the existing switch case.
 - The switch case is used to create a constant hash map based on how c# compiles code. This also prevents creating every problem set object in memory at application startup... Think of it as lazy loading our problems.
+
+</br>**<em>[Problems/1 Folder](https://github.com/rayraydejesus/LeetCode-CSharp-Template/blob/main/Problems/1/)</em>**
+- Our Problem 1 Two Sum example hierarchy.
+- The [Problem_1 File](https://github.com/rayraydejesus/LeetCode-CSharp-Template/blob/main/Problems/1/Problem_1.cs) showcases our leetcode problem built from the LeetCodeProblem abstact. This is also where our input parsing happens.
+- Within [Common](https://github.com/rayraydejesus/LeetCode-CSharp-Template/blob/main/Problems/1/Common/) we have an interface for all our solutions to derive from as well as an object to cast our input to.
+- Within [Solutions](https://github.com/rayraydejesus/LeetCode-CSharp-Template/blob/main/Problems/1/Solutions/) we can put the many different solutions we may develop by utilizing our solution interface.
 
 <strong>CHEERS! 🍻</strong>
 -------
