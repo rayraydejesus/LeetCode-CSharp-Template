@@ -27,6 +27,13 @@ Go as hard as you want with error checking. For sanity I try to assume input wil
 -----------
 Use this repo as a template to create your own fresh repository.
 
+Download the repository and run in Visual Studio or by using the command.
+```
+$ dotnet run
+```
+
+**Architecture**
+-----------
 </br>**<em>[Common Folder](./Common/)</em>**
 - Contains an interface and abstract class to dervive your leetcode problems from.
 - Includes a "prompts" file to handle basic error and input prompting.
