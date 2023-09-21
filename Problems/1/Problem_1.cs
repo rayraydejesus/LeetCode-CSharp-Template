@@ -97,7 +97,7 @@
 	protected override void runSolution(object input)
 	{
 		Input_1 parsedInput = input as Input_1;
-		Solution_1 solution = new Solution_1();
+		ISolution_1 solution = new Solution_1_Hashmap();
 		int[] result = solution.TwoSum(parsedInput.nums, parsedInput.target);
 
 		this.printSolution(result);
