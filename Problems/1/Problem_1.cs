@@ -70,6 +70,9 @@
 
 				Input_1 parsedInput = new Input_1(nums, target);
 				this.runSolution(parsedInput);
+
+                if (!Prompts.anotherSolution())
+                    break;
             }
         }
     }

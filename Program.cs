@@ -29,14 +29,7 @@ public class Program
             }
 
 
-            Console.WriteLine("Would you like to try again? (Y/N)");
-            input = Console.ReadLine().ToLower();
-
-            if (input.Length < 1)
-                break;
-            else if (input[0] == 'y')
-                continue;
-            else
+            if (!Prompts.oneMoreTime())
                 break;
         }
 
