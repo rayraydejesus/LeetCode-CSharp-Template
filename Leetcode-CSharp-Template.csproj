@@ -9,7 +9,6 @@
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <WarningLevel>4</WarningLevel>
-    <AssemblyName>LeetCode-CSharp-Template</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Problems\" />
