@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode-CSharp-Template", "LeetCode-CSharp-Template.csproj", "{92EB3709-3A54-4AE1-B81E-E7717DA967AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode-CSharp-Templat", "LeetCode-CSharp-Templat.csproj", "{92EB3709-3A54-4AE1-B81E-E7717DA967AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
